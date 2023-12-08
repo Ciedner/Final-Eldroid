@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="moodDescription" type="id" />
+    <item name="moodTrackerTitle" type="id" />
+    <item name="skipButton" type="id" />
+    <item name="moodIcon" type="id" />
+    <item name="pageIndicatorLayout" type="id" />
+    <item name="nextButton" type="id" />
+</resources>
