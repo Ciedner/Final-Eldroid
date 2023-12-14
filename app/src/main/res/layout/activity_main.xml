@@ -2,63 +2,76 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/dodgerblue"
+    >
 
 
     <Button
-        android:id="@+id/btnSkip"
+        android:id="@+id/skipButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Skip"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        />
 
 
-    <LinearLayout
-        android:id="@+id/moodSelectionArea"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/moodIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="319dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/mood" />
+
+    <TextView
+        android:id="@+id/moodTrackerTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-
-        <ImageView
-            android:id="@+id/imageMood1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_mood_bad" />
-
-    </LinearLayout>
+        android:layout_below="@id/moodIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mood Tracker App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
 
 
     <TextView
-        android:id="@+id/textInstructions"
-        android:layout_width="match_parent"
+        android:id="@+id/moodDescription"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/moodSelectionArea"
-        android:text="Choose Your Mood\n\nThe mood is set for an entire day, but at any point during it, you can reopen the app to change your mood. At midnight, the mood at that point in time will be saved as the mood of the day, and you can start setting the mood of the new day."
-        android:gravity="center_horizontal"
-        android:textAlignment="center"/>
+        android:layout_below="@id/moodTrackerTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="The idea is simple: every day, you record your mood within the application."
+        android:textColor="@color/black"
+        />
 
 
     <LinearLayout
-        android:id="@+id/pageIndicatorContainer"
-        android:layout_width="match_parent"
+        android:id="@+id/pageIndicatorLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_below="@id/textInstructions">
-
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/moodDescription"
+        android:layout_marginTop="16dp">
     </LinearLayout>
 
-
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        />
 
 </RelativeLayout>
